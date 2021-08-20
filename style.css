@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-y: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    box-shadow: 2px 6px 44px -28px rgba(0,0,0,0.75);  
+    /* margin-left: -4rem;     */
+
+}
+.logo{
+    height: 4rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    height: 3.5rem;
+}
+.search {
+    height: 4rem;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.searchLogo {
+    height: 3rem;
+    width: 3rem;
+    background-color: #8c86a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchfeild {
+    display: flex;
+}
+.searchfeild input {
+    height: 3rem;
+    width: 18rem;
+    padding: .8rem;
+    border: none;
+    font-size: 0.8rem;
+    background-color: rgba(0,0,0,0.03);
+}
+.fa-search {
+    color: #fff;
+}
+.profile{
+    height: 4rem;
+    width: 28rem;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.notification{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.fa-bell ,.fa-envelope{
+    color:  rgba(0,0,0,0.2);
+    margin-right: 2.5rem;
+}
+
+.account {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.account span {
+    /* font-family: sans-serif; */
+    color: rgba(0,0,0,0.2);
+    margin: 0 3rem 0 2rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.account img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+.bdy {
+    display: flex;
+}
+
+.sidebar{
+    height: 90vh;
+    width: 15rem;
+    background-color: #6042E0;
+}
+
+
+
+
+.verfication {
+    height: 90vh;
+    width: 83vw;
+    background-color: rgba(0,0,0,0.03);
+}
+
+.mail{
+    height: 80vh;
+    width: 83vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.verfication h1{
+    margin:1rem 0 0 2rem; 
+    font-size: 2rem;
+}
+.mail span{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.msearch {
+    height: 4rem;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.msearchLogo {
+    height: 3rem;
+    width: 4rem;
+    background-color: #6042E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+.msearchfeild {
+    display: flex;
+}
+.msearchfeild input {
+    height: 3rem;
+    width: 18rem;
+    padding: .8rem;
+    border: none;
+    font-size: 0.8rem;
+    background-color:#fff;
+}
+
+.dashboard {
+    height: 2rem;
+    width: 12rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 600;
+    color: #fff;
+    
+    
+}
+.dashboard img {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: -.5rem;
+    margin-right: 1rem;
+}
+
+.sidebar span{
+    color: #fff;
+    font-weight: bold;
+    margin-left: .5rem;
+    font-size: 1rem;
+}
+
+.sidebar ul li {
+    color: rgba(255, 255, 255, 0.61);
+    font-size: .8rem;
+    margin-left: 1.5rem;
+    list-style: none;
+    font-weight: normal;
+    margin-top: .8rem;
+    cursor: pointer;
+}
+
+
+.fa-user, .fa-download,.fa-plug,.fa-list,.fa-file,.fa-address-card{
+    color: rgba(255, 255, 255, 0.61);
+    margin-right: .5rem;
+    cursor: pointer;
+}
+.fa-handshake-o{
+    color: #fff;
+    
+}
+
+
+
+
+@media (max-width:768px) {
+ 
+ .mail span{
+     font-size: 1rem;
+     margin-top: -12rem;
+     margin-left: 5rem;
+ }
+ .verfication h1 {
+     font-size: 1.5rem;
+     margin-left: 1.6rem;
+     font-weight: bold;
+     margin-top: 2rem;
+ }
+ 
+ .msearch {
+    height: 4rem;
+    width: 20rem;
+    margin-left: 4rem;
+  
+    
+}
+.verfication {
+    width: 100vw;
+}
+.msearchLogo {
+    height: 2rem;
+    width: 4rem;
+    
+}
+
+.msearchfeild input {
+    height: 2rem;
+    width: 10rem;
+    
+}
+ 
+ .header{
+     margin-left: 0;
+ }
+ 
+ .btn{
+    opacity: 1;
+    z-index: 100;
+    
+ }
+
+    .search{
+        position: fixed;
+        left: -500%;
+    }
+    .profile{
+        position: fixed;
+        left: 100%;
+    }
+    .sidebar{
+        position:fixed;
+        left:  -100%;
+       
+    }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
